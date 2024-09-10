@@ -1,6 +1,6 @@
 # Counter
 
-In this chapter, we introduce event handlers. Take a look at this demo, with plus and minus buttons that increment and decrement a counter. You may remember it from the [pupy.dev](https://puepy.dev) homepage.
+In this chapter, we introduce event handlers. Take a look at this demo, with plus and minus buttons that increment and decrement a counter. You may remember it from the [puepy.dev](https://puepy.dev) homepage.
 
 <puepy src="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/03_counter/index.html" edit="https://pyscript.com/@kkinder/puepy-tutorial/latest"/>
 

@@ -48,7 +48,7 @@ Instead, use a context manager to tell the state object what is being modified. 
 ```Python
 class MyComponent(Component):
     def update_movies(self):
-        # THIS WILL NOT CAUSE A UI REFRESH!
+        # THIS WILL CAUSE A UI REFRESH!
         with self.state.mutate("movies"):
             self.state["movies"].append("Monty Python’s Life of Brian")
 ```
