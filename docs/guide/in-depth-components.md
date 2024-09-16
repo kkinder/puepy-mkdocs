@@ -6,7 +6,7 @@ Defining components in PuePy is a powerful way to encapsulate data, display, and
 
 ### Slots
 
-Slots are a mechanism to allow parent components to inject content (tags, other components, etc) into child components in specified locations. There can be one default or unamed slot, and any number of named slots. 
+Slots are a mechanism to allow parent components to inject content (tags, other components, etc) into child components in specified locations. There can be one default or unnamed slot, and any number of named slots.
 
 - Slots are defined in the `populate()` method of a component or page using `self.insert_slot`. 
 - Slots are consumed in the code using the component with a context manager object and `<component>.slot()`.
