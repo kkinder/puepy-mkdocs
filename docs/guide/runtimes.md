@@ -29,12 +29,12 @@ You may consider using MicroPython when:
 
 ## How to switch runtimes
 
-To choose a runtime, specify either `type="mpy"` or `type="py"` in your `<script>` tag when loading PuePy. For example:
+To choose a runtime, specify either `type="py"` or `type="mpy"` in your `<script>` tag when loading PuePy. For example:
 
 ### Loading Pyodide
 
 ```html
-<script type="mpy" src="./main.py" config="pyscript.json"></script>
+<script type="py" src="./main.py" config="pyscript.json"></script>
 ```
 
 ### Loading MicroPython
