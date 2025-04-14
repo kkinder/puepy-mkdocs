@@ -26,9 +26,9 @@ Because WebComponents are initialized just like other HTML tags, they can be use
 @app.page()
 class DefaultPage(Page):
     def populate(self):
-        with t.sl_dialog(label="Dialog", classes="dialog-overview", tag="sl-dialog", ref="dialog"):  # (1)!
+        with t.sl_dialog(label="Dialog", classes="dialog-overview", tag="sl-dialog", ref="dialog"):  # (1)
             t("Web Components are just delightful.")
-            t.sl_button("Close", slot="footer", variant="primary", on_click=self.on_close_click)  # (2)!
+            t.sl_button("Close", slot="footer", variant="primary", on_click=self.on_close_click)  # (2)
         t.sl_button("Open Dialog", tag="sl-button", on_click=self.on_open_click)
 
     def on_open_click(self, event):
@@ -37,6 +37,7 @@ class DefaultPage(Page):
     def on_close_click(self, event):
         self.refs["dialog"].element.hide()
 ```
+
 1. The `sl_dialog` tag is a custom tag that creates a `sl-dialog` Web Component. It was defined by the Shoelace library we loaded via CDN.
 2. The `sl_button` tag is another custom tag that creates a `sl-button` Web Component.
 
