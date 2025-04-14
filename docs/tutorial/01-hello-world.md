@@ -72,11 +72,26 @@ To use PuePy, you must always create an `Application` instance, even if the appl
 --8<-- "puepy/examples/tutorial/01_hello_world/hello_world.py:3:3"
 ```
 
-Next, we define a Page and use the `t` singleton to compose our DOM in the `populate()` method. Don't worry too much about the details for now; just know that this is how we define pages and components in PuePy:
+Next, we define a `Page`. 
 
-``` py
+``` py hl_lines="2"
 --8<-- "puepy/examples/tutorial/01_hello_world/hello_world.py:6:9"
 ```
+
+Then compose our DOM using the `populate()` method
+
+``` py hl_lines="4"
+--8<-- "puepy/examples/tutorial/01_hello_world/hello_world.py:6:9"
+```
+
+Then use the `t` singleton to build the required HTML component. 
+
+In this example we create a `h1` component with text `Hello World`, which would generate an HTML code as `<h1>Hello World!</h1>`
+
+``` py hl_lines="5"
+--8<-- "puepy/examples/tutorial/01_hello_world/hello_world.py:6:9"
+```
+Don't worry too much about the details for now; just know that this is how we define pages and components in PuePy:
 
 Finally, we tell PuePy where to *mount* the application. This is where the application will be rendered in the DOM. The `#app` element was already defined in our HTML file.
 
@@ -85,6 +100,8 @@ Finally, we tell PuePy where to *mount* the application. This is where the appli
 ```
 
 And with that, the page is added to the application, and the application is mounted in the element with id `app`.
+
+
 
 !!! note "Watching for Errors"
 
