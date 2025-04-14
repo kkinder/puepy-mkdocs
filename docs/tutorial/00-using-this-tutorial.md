@@ -16,13 +16,27 @@ You can clone the entire examples project and edit it yourself to continue your 
 
 Once cloned you make your own changes and experiment with them in real time.
 
-## Editing locally
+## Running locally
 
-After cloning [puepy on git](https://github.com/kkinder/puepy), you can run the examples using a simple script:
+After cloning [puepy from GitHub](https://github.com/kkinder/puepy),
+
+```
+git clone https://github.com/kkinder/puepy.git
+cd puepy
+```
+you can run the examples using a simple script `serve_examples.py`
+
+```
+python3 serve_examples.py
+```
 
 ![CleanShot 2024-06-30 at 10.52.57@2x.png](../images/puepy-examples-terminal.png)
 
-http://localhost:8000/ show you a list of examples
+## Check it
+
+Open your browser at http://localhost:8000/ 
+
+You will see a list of examples
 
 ![CleanShot 2024-06-30 at 10.54.52@2x.png](../images/puepy-localhost-browser.png)
 
@@ -34,4 +48,6 @@ Most of the examples you see live in this tutorial include example code running 
 
 <puepy/>
 
-There, you can see the running example inline with its explanation. You can also edit the code on PyScript.com by navigating to its example folder and cloning the project, as described above.
+There, you can see the running example inline with its explanation. 
+
+You can also edit the code on [PyScript.com](https://pyscript.com/) by navigating to [PyScript - PuePy](https://pyscript.com/@kkinder/puepy-tutorial/latest) and cloning the project (after signing in), by clicking the `Clone Project` button.
